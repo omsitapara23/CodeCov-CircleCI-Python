@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  build:
+  check-flake8:
     docker:
       - image: circleci/python:3.6.4
     steps:
@@ -12,3 +12,11 @@ jobs:
       - run: 
           name: Checking for flake8 errors
           command: 'flake8 '
+  build:
+    docker:
+      - image: circleci/python:3.6.4
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: 'python src/__init__.py'
