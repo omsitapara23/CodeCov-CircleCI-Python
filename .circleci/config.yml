@@ -13,5 +13,5 @@ jobs:
           command: 'sudo pip install flake8 -y'
       - checkout
       - run: 
-        name: Checking for flake8 errors
-        command: 'flake8'
+          name: Checking for flake8 errors
+          command: 'flake8 '
