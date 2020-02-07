@@ -7,7 +7,7 @@ jobs:
     steps:
       - run:
           name: Installing flake8
-          command: 'pip install flake8'
+          command: 'sudo pip install flake8'
       - checkout
       - run: 
           name: Checking for flake8 errors
