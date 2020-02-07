@@ -10,10 +10,12 @@ python: 3.6
 # Install the codecov pip dependency
 install:
   - pip install codecov
+  - pip install flake8
 
 # Run the unit test
 script:
   - coverage run tests.py
+  - flake8
 
 # Push the results back to codecov
 after_success:
