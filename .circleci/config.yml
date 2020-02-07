@@ -13,7 +13,7 @@ jobs:
           name: Checking for flake8 errors
           command: 'flake8 '
           
-   build-status:
+  build-status:
     docker:
       - image: circleci/python:3.6.4
     steps:
